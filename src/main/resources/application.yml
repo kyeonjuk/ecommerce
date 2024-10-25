@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: ecommerce
+
+  output:
+    ansi:
+      enabled: always
+
+  thymeleaf:
+    suffix: .html
+    prefix: classpath:/templates/views/
