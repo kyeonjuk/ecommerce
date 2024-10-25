@@ -10,6 +10,7 @@ public class EcommerceApplication {
 		SpringApplication.run(EcommerceApplication.class, args);
 		System.out.println("http://localhost:8080/header");
 		System.out.println("http://localhost:8080/");
+		System.out.println("http://localhost:8080/cart");
 	}
 
 }

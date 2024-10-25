@@ -16,4 +16,9 @@ public class EcommerceController {
         return "main";
     }
 
+    @GetMapping("/cart")
+    public String cart() {
+        return "cart";
+    }
+
 }

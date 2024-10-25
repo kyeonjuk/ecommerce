@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- js -->
+  <script th:src="@{/js/my_cart.js}" defer></script>
+</head>
+<body>
+
+<div th:replace="~{./header :: headerFragment}"></div>
+
+
+<div class="Middle-section">
+  <div class="signin-container">
+    <div class="login-input-container">
+      <div class="signup-box-top">
+        <div class="title">Login</div>
+      </div>
+      <div class="login-box">
+        <div class="inputWrap">
+          <label for="email" class="inputTitle">Email</label>
+          <input type="email" class="input" id="email" value="">
+        </div>
+        <div class="inputWrap">
+          <label for="password" class="inputTitle">Password</label>
+          <input type="password" class="input" id="password" value="">
+        </div>
+        <div class="link-container">
+          <a class="login-link-font" href="/signup">회원가입</a>
+          <a class="login-link-font" href="/user/mypage/update-info">비밀번호 재설정</a>
+        </div>
+      </div>
+    </div>
+    <div class="signin-button-container">
+      <div class="signin-button-box">
+        <button class="signinButton">Login</button>
+        <div class="sns-login-content">
+          <div class="sns-login-button-box">
+            <button class="sns-button Naver-button">
+              <div class="Naver-button-image"></div>
+              <span>Sign in with Naver</span>
+            </button>
+            <button class="sns-button Google-button">
+              <div class="Google-button-image"></div>
+              <span>Sign in with Google</span>
+            </button>
+            <button class="sns-button Kakao-button"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div th:replace="~{./footer :: footerFragment}"></div>
+</body>
+</html>
