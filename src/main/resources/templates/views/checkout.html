@@ -75,13 +75,26 @@
             <div class="checkout__order">
               <h4>주문 내역</h4>
               <div class="checkout__order__products">상품 <span>총합</span></div>
+<!--              <ul>-->
+<!--                <tr th:each="item : ${orderItems}">-->
+<!--                  <li th:text="${item.name}">상품 이름</li>-->
+<!--                  <span th:text="${item.total} + '원'">총합</span>-->
+<!--                </tr>-->
+<!--              </ul>-->
               <ul>
-                <li>Vegetable’s Package <span>$75.99</span></li>
-                <li>Fresh Vegetable <span>$151.99</span></li>
-                <li>Organic Bananas <span>$53.99</span></li>
+                <li>Vegetable’s Package <span>1000원</span></li>
+                <li>Fresh Vegetable <span>1000원</span></li>
+                <li>Organic Bananas <span>1000원</span></li>
               </ul>
-              <div class="checkout__order__subtotal">합계 <span>50,000</span>원</div>
-              <div class="checkout__order__total">최종금액 <span>50,000</span>원</div>
+
+<!--              <div class="checkout__order__subtotal">-->
+<!--                합계 <span th:text="${subtotal} + '원'">합계</span>-->
+<!--              </div>-->
+<!--              <div class="checkout__order__total">-->
+<!--                최종금액 <span th:text="${total} + '원'">최종금액</span>-->
+<!--              </div>-->
+              <div class="checkout__order__subtotal">합계 <span>3,000원</span></div>
+              <div class="checkout__order__total">최종금액 <span>3,000원</span></div>
 
               <div class="checkout__input__checkbox">
                 <label for="payment">
@@ -97,7 +110,7 @@
                   <span class="checkmark"></span>
                 </label>
               </div>
-              <button type="submit" class="site-btn">PLACE ORDER</button>
+              <button type="submit" class="site-btn">결제하기</button>
             </div>
           </div>
         </div>

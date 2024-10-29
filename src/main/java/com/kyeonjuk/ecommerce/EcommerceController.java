@@ -12,13 +12,33 @@ public class EcommerceController {
     }
 
     @GetMapping("/")
-    public String main() {
+    public String root() {
         return "main";
     }
 
     @GetMapping("/cart")
     public String cart() {
         return "cart";
+    }
+
+    @GetMapping("/like")
+    public String like() {
+        return "like";
+    }
+
+    @GetMapping("/login")
+    public String login() {
+        return "login";
+    }
+
+    @GetMapping("/checkout")
+    public String checkout() {
+        return "checkout";
+    }
+
+    @GetMapping("/shop-detail")
+    public String shopDetail() {
+        return "shop-detail";
     }
 
 }
