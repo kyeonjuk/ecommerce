@@ -41,4 +41,9 @@ public class EcommerceController {
         return "shop-detail";
     }
 
+    @GetMapping("/shop-list")
+    public String shopList() {
+        return "shop-list";
+    }
+
 }

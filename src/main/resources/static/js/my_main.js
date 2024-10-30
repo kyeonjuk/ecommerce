@@ -47,3 +47,52 @@ document.addEventListener('DOMContentLoaded', function() {
 //        });
 //    });
 //});
+
+// 상품별 썸네일이미지의 찜하기 기능
+function toLike(productId) {
+
+    event.preventDefault(); // 기본 링크 동작 방지
+
+    // API 요청을 보낼 URL
+    const apiUrl = 'http://localhost:8080/api/products/' + productId; // 실제 URL로 변경
+
+    fetch(apiUrl, {
+        method: 'POST', // 또는 'GET', 사용에 따라
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ id: productId }), // 필요한 경우 데이터 추가
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log('Success:', data);
+    })
+    .catch((error) => {
+        console.error('Error:', error);
+    });
+}
+
+
+// 상품별 썸네일이미지의 장바구니 추가 기능
+function toCart(productId) {
+
+    event.preventDefault(); // 기본 링크 동작 방지
+
+    // API 요청을 보낼 URL
+    const apiUrl = 'http://localhost:8080/api/products/' + productId; // 실제 URL로 변경
+
+    fetch(apiUrl, {
+        method: 'POST', // 또는 'GET', 사용에 따라
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ id: productId }), // 필요한 경우 데이터 추가
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log('Success:', data);
+    })
+    .catch((error) => {
+        console.error('Error:', error);
+    });
+}

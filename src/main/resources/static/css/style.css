@@ -1171,20 +1171,20 @@ ol {
 }
 
 .price-range-wrap .range-slider .price-input:after {
-	position: absolute;
-	left: 38px;
-	top: 13px;
-	height: 1px;
-	width: 5px;
-	background: #dd2222;
-	content: "";
+    position: absolute;
+    left: 50px;
+    top: 13px;
+    height: 2px;
+    width: 9px;
+    background: #dd2222;
+    content: "";
 }
 
 .price-range-wrap .range-slider .price-input input {
 	font-size: 16px;
 	color: #dd2222;
 	font-weight: 700;
-	max-width: 20%;
+	width: 25%;
 	border: none;
 	display: inline-block;
 }
@@ -1467,8 +1467,6 @@ ol {
 }
 
 .filter__item {
-	padding-top: 45px;
-	border-top: 1px solid #ebebeb;
 	padding-bottom: 20px;
 }
 
@@ -3515,4 +3513,8 @@ ol {
 
 .cart-checkbox {
     zoom: 1.8;
+}
+
+.hero__search__categories:hover {
+    pointer: cursor;
 }
